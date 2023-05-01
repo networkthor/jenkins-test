@@ -14,4 +14,10 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-  
+    
+    - name: Resolve dependencies
+      uses: action/checkout@v2
+      with:
+        repository: ccgus/fmdb
+        ref: 2.7.7
+        path: FMDB
