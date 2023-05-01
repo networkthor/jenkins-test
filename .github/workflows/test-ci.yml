@@ -21,4 +21,3 @@ jobs:
         repository: ccgus/fmdb
         ref: tags/2.7.7
         path: FMDB
-      verbose: true
