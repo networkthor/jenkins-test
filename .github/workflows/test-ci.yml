@@ -15,6 +15,13 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
     
+    - name: Clone remote private repo
+      uses: actions/checkout@v3
+      with:
+        repository: networkthor/vmware-workpro16
+        ref: main
+        path: license
+
     - name: Resolve dependencies
       uses: actions/checkout@v3
       with:
