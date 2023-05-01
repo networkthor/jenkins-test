@@ -10,7 +10,7 @@ on:
 jobs:
   build-and-push:
     name: Build and Push to ECR
-    runs-on: macos-13
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -19,5 +19,5 @@ jobs:
       uses: action/checkout@v2
       with:
         repository: ccgus/fmdb
-        ref: main
+        ref: 2.7.7
         path: FMDB
