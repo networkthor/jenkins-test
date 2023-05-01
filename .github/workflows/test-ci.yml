@@ -12,10 +12,6 @@ jobs:
     name: Build and Push to ECR
     runs-on: macos-13
     steps:
-    
-    - name: Resolve dependencies
-      uses: action/checkout@v2
-      with:
-        repository: github.com:ccgus/fmdb.git
-        ref: 2.7.7
-        path: FMDB
+    - name: Checkout
+      uses: actions/checkout@v2
+  
