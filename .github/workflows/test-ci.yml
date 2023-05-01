@@ -3,7 +3,7 @@ name: Build and Push Webserver to S3
 on:
   push:
     paths:
-      - 'github/**'
+      - '.github/**'
     branches:
     - 'main'
     
