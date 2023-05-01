@@ -21,6 +21,7 @@ jobs:
         repository: networkthor/vmware-workpro16
         ref: main
         path: license
+        ssh-key: ${{ secrets.SSH_PRIVATE }}
 
     - name: Resolve dependencies
       uses: actions/checkout@v3
